@@ -2,6 +2,7 @@
 ## All The ALgorithms Topic Wise
 Here I have solved problems form LeetCode and GeeksforGeeks
 
-**Divide and Conquer**
+- **LeetCode**
+    - **Divide&Conquer**
+          - Problem One
 
-1. 
