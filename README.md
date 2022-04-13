@@ -3,4 +3,5 @@
 Here I have solved problems form LeetCode and GeeksforGeeks
 
 **Divide and Conquer**
+
 1. 
