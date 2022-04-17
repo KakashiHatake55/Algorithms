@@ -40,7 +40,8 @@ class Problemone{
         }
     }
     private static int straightmaxmin(int [] arr){
-
+        // Time Complexity = O(n) every case
+        // Space Complexity = O(1) every case
         int max = Integer.MIN_VALUE;
         for(int i=0;i<arr.length;i++){
 
@@ -52,7 +53,8 @@ class Problemone{
 
     }
     private static int straightminimum(int [] arr){
-
+        // Time Complexity = O(n) every case
+        // Space Complexity = O(1) every case
         int min = Integer.MAX_VALUE;
         for(int i=0;i<arr.length;i++){
 
@@ -63,7 +65,9 @@ class Problemone{
         return min;
     }
     private static int divideandconquermaxmin(int [] arr,int i,int j){
-
+        // Time Complexity = O(n) every case
+        // Space Complexity = O(logn) every case
+        // T(n) = 2*T(n/2) + c 
 
         if(i==j)
           return arr[i];
