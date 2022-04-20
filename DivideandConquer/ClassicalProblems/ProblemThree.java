@@ -90,6 +90,35 @@ public class ProblemThree {
         }
 
     }
+    public static int IterativeBS(int arr[],int i,int j,int key){
+
+
+        while(i<=j){
+
+
+            if(i==j){
+
+                if(arr[i]==key)
+                  return i;
+                else
+                  return -1;
+            }
+            else{
+
+                int mid = (i+j)/2;
+
+                if(arr[mid]==key)
+                  return mid;
+                else if(arr[mid]<key)
+                  i = mid+1;
+                else
+                  j = mid-1;
+            }
+            
+              
+        }
+        return -1;
+    }
     public static void main(String args []){
 
         int n = in.nextInt();
@@ -109,6 +138,13 @@ public class ProblemThree {
         int indxB = BinarySearch(arr,0,arr.length-1,k);
         if(indxB!=-1)
          System.out.print("The key is Present in The Array at "+ indxB);
+        else
+         System.out.print("The key is not Present in The Array");
+         
+        //Iterative BinarySearch
+        int indxI = IterativeBS(arr,0,arr.length,k);
+        if(indxI!=-1)
+         System.out.print("The key is Present in The Array at "+ indxI);
         else
          System.out.print("The key is not Present in The Array");
     }
